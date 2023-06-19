@@ -2,16 +2,22 @@ package Phone;
 
 public class Phone {
 
-    private int id;
-    private String name;
-    private String brand;
-    private double price;
-    private String description;
+    public int id;
+    public String phoneName;
+    public String brand;
+    public Double price;
+    public String description;
 
-    public Phone(int id ,String name, String brand, double price, String description) {
-        super();
+    public Phone(int id, String phoneName, String brand, Double price, String description) {
         this.id = id;
-        this.name = name;
+        this.phoneName = phoneName;
+        this.brand = brand;
+        this.price = price;
+        this.description = description;
+    }
+
+    public Phone(String phoneName, String brand, Double price, String description) {
+        this.phoneName = phoneName;
         this.brand = brand;
         this.price = price;
         this.description = description;
@@ -25,12 +31,12 @@ public class Phone {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getPhoneName() {
+        return phoneName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setPhoneName(String phoneName) {
+        this.phoneName = phoneName;
     }
 
     public String getBrand() {
@@ -41,13 +47,14 @@ public class Phone {
         this.brand = brand;
     }
 
-    public double getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(double prices) {
-        this.price = prices;
+    public void setPrice(Double price) {
+        this.price = price;
     }
+
     public String getDescription() {
         return description;
     }
